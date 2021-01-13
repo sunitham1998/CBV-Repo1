@@ -1,0 +1,13 @@
+<html lang="en" dir="ltr">
+{%extends 'myApp/parent.html'%}
+<body>
+  {%block for_child%}
+<h1 style="color:green">Fill up the Details</h1><br>
+<form method="post">
+{{form.as_p}}
+{%csrf_token%}
+<input type="submit"class="btn btn-lg btn-primary" value="submit">
+</form>
+{%endblock%}
+</body>
+</html>

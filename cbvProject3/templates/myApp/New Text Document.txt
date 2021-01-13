@@ -1,0 +1,13 @@
+{%extends 'myApp/parent.html'%}
+<html lang="en" dir="ltr">
+<body>
+  {%block for_child%}
+<h1 style="color:green">Student Details</h1>
+<form mrthod="post">
+{{form.as_p}}
+{%csrf_toekken%}
+<input type="submit"class="btn btn-lg btn-primary" value="submit">
+</form>
+{%endblock%}
+</body>
+</html>
